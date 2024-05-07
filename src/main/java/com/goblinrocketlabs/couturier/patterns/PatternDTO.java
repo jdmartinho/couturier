@@ -3,7 +3,8 @@ package com.goblinrocketlabs.couturier.patterns;
 import org.springframework.data.annotation.Id;
 
 import java.time.Year;
-public record Pattern(
+
+public record PatternDTO(
         @Id
         Long id,
         String name,
@@ -11,4 +12,5 @@ public record Pattern(
         String company,
         Enum<GarmentType> garmentType,
         String notes
-) {}
+) {
+}
